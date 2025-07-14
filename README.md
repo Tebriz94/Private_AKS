@@ -29,7 +29,7 @@ The architecture consists of two Virtual Networks (VNets) — a **Hub VNet** and
   - DNS zones linked to VNets to resolve private resource addresses.
 
 - **Virtual Machines:**
-  - Example Windows VM deployed with NIC attached to appropriate subnet.
+  - Example Windows VM deployed with NIC attached to the appropriate subnet.
 
 ---
 
@@ -43,17 +43,4 @@ The architecture consists of two Virtual Networks (VNets) — a **Hub VNet** and
 ---
 
 
-+-------------------+                 +----------------------+
-|                   |   VNet Peering  |                      |
-|    Hub VNet       +-----------------+      AKS VNet        |
-|                   |                 |                      |
-|  +-------------+  |                 |  +----------------+  |
-|  | Azure       |  |                 |  | AKS Cluster    |  |
-|  | Bastion     |  |                 |  | Nodes          |  |
-|  +-------------+  |                 |  +----------------+  |
-|                   |                 |                      |
-|  +-------------+  |                 |  +----------------+  |
-|  | Key Vault   |  |                 |  | App Gateway    |  |
-|  | Private EP  |  |                 |  | & Utilities    |  |
-|  +-------------+  |                 |  +----------------+  |
-+-------------------+                 +----------------------+
+
